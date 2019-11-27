@@ -14,10 +14,14 @@
 
 <body>
   <!-- <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script> -->
-  <script src="js/script.js"></script>
+  <!-- <script src="js/script.js"></script> -->
+    
     <?php 
-    echo("poop");
+        echo(
+            <h1>Test<h1/>
+        );
     ?>
+    
   <p>Hello, world!</p>
 
 </body>
