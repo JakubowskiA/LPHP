@@ -18,11 +18,27 @@
     
     <?php 
         echo(
-            <h1>Test<h1/>
+           Test
         );
     ?>
+
+  <p>Hello, pets!</p>
+    <form action="" method="get">
+        Name: <input type="text" name="name">
+        <br>
+        Species: <input type="text" name="species"> 
+        <br> 
+        Age: <input type="number" name="age">
+        <br>
+        <input type="submit">
+    </form>
+    <br><br>
+    Pet name: <?php echo $_GET["name"]?>
+    <br>
+    Pet species: <?php echo $_GET["species"]?>
+    <br>
+    Pet age: <?php echo $_GET["age"]?>
     
-  <p>Hello, world!</p>
 
 </body>
 
