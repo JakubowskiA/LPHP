@@ -38,6 +38,19 @@
     Pet species: <?php echo $_GET["species"]?>
     <br>
     Pet age: <?php echo $_GET["age"]?>
+    <br><br>
+    <?php 
+    $name = $_GET["name"];
+    $species = $_GET["species"];
+    $age = $_GET["age"];
+
+    
+    echo "My pet's name is $name. <br>";
+    
+    echo "My pet is  a $species.<br>";
+    
+    echo "My pet is $age years old.";
+    ?>
     
 
 </body>
