@@ -23,7 +23,7 @@
     ?>
 
   <p>Hello, pets!</p>
-    <form action="" method="get">
+    <form action="" method="post">
         Name: <input type="text" name="name">
         <br>
         Species: <input type="text" name="species"> 
@@ -33,23 +33,26 @@
         <input type="submit">
     </form>
     <br><br>
-    Pet name: <?php echo $_GET["name"]?>
+    Pet name: <?php echo $_POST["name"]?>
     <br>
-    Pet species: <?php echo $_GET["species"]?>
+    Pet species: <?php echo $_POST["species"]?>
     <br>
-    Pet age: <?php echo $_GET["age"]?>
+    Pet age: <?php echo $_POST["age"]?>
     <br><br>
     <?php 
-    $name = $_GET["name"];
-    $species = $_GET["species"];
-    $age = $_GET["age"];
+    function reportDogInfo(){
+    $name = $_POST["name"];
+    $species = $_POST["species"];
+    $age = $_POST["age"];
 
-    
     echo "My pet's name is $name. <br>";
     
     echo "My pet is  a $species.<br>";
     
     echo "My pet is $age years old.";
+    }
+    
+    reportDogInfo()
     ?>
     
 
