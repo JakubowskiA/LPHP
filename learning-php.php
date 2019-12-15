@@ -49,10 +49,19 @@
     
     echo "My pet is  a $species.<br>";
     
-    echo "My pet is $age years old.";
+    echo "My pet is $age years old.<br>";
+
+    if($name === "Baby" && $species === "Dog"){
+      echo "I have the best dog ever!";
+    }elseif($name !== "Baby" && $species === "Dog"){
+      echo "Good dog!";
+    }
+
     }
     
-    reportDogInfo()
+    if($_POST["name"] !== null){
+    reportDogInfo();
+    }
     ?>
     
 
