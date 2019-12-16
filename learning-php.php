@@ -18,18 +18,18 @@
     
     <?php 
         echo(
-           Test
+           "<h1>Tell me about your pet.</h1>"
         );
     ?>
 
-  <p>Hello, pets!</p>
+  <h3>Hello, pets!</h3>
     <form action="" method="post">
         Name: <input type="text" name="name">
         <br>
         Species: <input type="text" name="species"> 
         <br> 
         Age: <input type="number" name="age">
-        <br>
+        <br><br>
         <input type="submit">
     </form>
     <br><br>
@@ -63,6 +63,10 @@
     reportDogInfo();
     }
     ?>
+    <br>
+    <h2>This is my dog!</h2>
+    <br>
+    <?php  include "php-classes.php"  ?>
     
 
 </body>
